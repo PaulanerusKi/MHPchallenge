@@ -1,0 +1,21 @@
+This project is a simple example of how I would fetch a API and display it in the DOM.
+It uses Javascript, HTML, CSS, VUE (cdn) and parcel as a bundler.
+
+The requirements were the following: 
+
+- Single Page Application
+- Show all GOT Houses 
+- Details on demand about the houses when clicked  
+- Usage of a Framework (Vue cdn) 
+- Usage of a Bundler (Parcel) 
+- Usage of Version-control (Github)
+
+The solution is limited to the basic requirements. 
+
+The following sources have been used: 
+The API:https://anapioficeandfire.com/
+The background image: https://jooinn.com/dark-wood.html 
+The Font is from: https://www.fonts4free.net/game-of-thrones-font.html
+As inspiration to fetch the paginated API: https://dev.to/nirmal_kumar/retrieve-entire-data-from-paginated-api-recursively-3pl4 
+How to switch / toggle on click: https://makitweb.com/how-to-toggle-css-classes-and-styles-with-vue-js/
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <title>MHP - Game of Thrones Challenge</title>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/styles.b61e60ae.css" rel="stylesheet">
+    <script src="/styles.b61e60ae.js"></script></head>
+
+    <body>
+        <!-- In this Navbar a menu could be added. As there are no additional features, the navbar was skipped. -->
+        <!-- Responsive navbar--> 
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #081f35">
+            <div class="container px-5">
+                <a id="title" class="navbar-brand" href="#!">MHP - Game of Thrones Challenge</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Houses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li> -->
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- A disclaimer what the user can do (click houses), and a reminder to be patient (fetching 444 houses over several pages from API) -->
+        <!-- Page Content -->
+        <div class="container px-4 px-lg-5">
+            <!-- Call to Action-->
+            <div class="card bg-dark my-5 py-4 text-center">
+                <div class="card-body m-0 text-center text-white"> Click the houses to find out more! (Westeros is huge, they need to travel whole seasons to appear on screen. 
+                    They sould be here any second now.) </div>
+            </div>
+
+            <!-- Creating cards using Vue cdn, v-for loop. V-bind to add "isActive" to class. If pressed, state is changed and other information is shown. -->
+            <!-- The state change / toggle only works for the whole class, not for individual IDs. Could loop through  -->
+            <!-- Shows the house name on the card until clicked, then adds region and words. -->
+            <!-- Content Row -->
+            <div id="cardContainer" class="row gx-4 gx-lg-5">
+                <div id="card" class="col-md-4 mb-5" v-for="house in houses"> 
+                    <div class="card h-100" style="background-color: #081f35">
+                        <div class="card-body" id="info">
+                           <div v-bind:style="{&quot;display&quot; : (isActive? &quot;block&quot; : &quot;none&quot; )}" @click="toggleClass()">  <h2 class="card-title">{{house.name}}</h2> </div> 
+                           <div v-bind:style="{&quot;display&quot; : (isActive? &quot;none&quot; : &quot;block&quot; )}" @click="isActive = !isActive"> <h2 class="card-subtitle"> {{house.name}} <br> from {{house.region}} has the words: <br> "{{house.words}}" </h2> </div>
+                        </div>  
+                    </div>
+                 </div>
+            </div>
+         </div> 
+        <!-- Footer-->
+        <footer class="py-5" style="background-color: #081f35">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Paul Kipp Application<br>MHP - A Porsche Company</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/scripts.cd665a19.js"></script>
+    </body>
+</html>
