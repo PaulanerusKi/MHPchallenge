@@ -19,3 +19,13 @@ The Font is from: https://www.fonts4free.net/game-of-thrones-font.html
 As inspiration to fetch the paginated API: https://dev.to/nirmal_kumar/retrieve-entire-data-from-paginated-api-recursively-3pl4 
 How to switch / toggle on click: https://makitweb.com/how-to-toggle-css-classes-and-styles-with-vue-js/
 
+The CSS uses a Bootstrap template:
+
+Start Bootstrap - Small Business v5.0.1 (https://startbootstrap.com/template/small-business)
+ Copyright 2013-2021 Start Bootstrap
+ Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-small-business/blob/master/LICENSE)
+ Bootstrap v5.0.1 (https://getbootstrap.com/)
+ Copyright 2011-2021 The Bootstrap Authors
+ Copyright 2011-2021 Twitter, Inc.
+ Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ 
